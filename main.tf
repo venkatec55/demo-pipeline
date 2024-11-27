@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "example" {
   location = "South India"
 
   tags = {
-    environment = "Demo"
+    environment = "Demo2"
   }
 }
 
@@ -26,7 +26,7 @@ resource "azurerm_public_ip" "example" {
   name                = "example-pip"
   resource_group_name = azurerm_resource_group.example.name
   location            = azurerm_resource_group.example.location
-  allocation_method   = "Static"
+  allocation_method   = "static"
   idle_timeout_in_minutes = 30
 }
 
