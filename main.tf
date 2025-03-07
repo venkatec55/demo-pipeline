@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "example" {
   location = "South India"
 
   tags = {
-    environment = "Demo2"
+    environment = "Demo1"
   }
 }
 
